@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Khung Flex Container chứa 5 div */
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  gap: 10px;
+  background-color: #eef2f5;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Các Flex Items mặc định */
+.item {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #4682b4;
+  border-radius: 4px;
+  flex-grow: 1; /* Cả 5 ô đều co giãn chiếm khoảng trống */
+}
+
+/* Ô thứ 2 áp dụng flex-grow lớn hơn các ô còn lại */
+.item2 {
+  background-color: #ff9999; /* Đổi màu đỏ nhạt để nổi bật */
+  flex-grow: 3; /* Nhận tỷ lệ phần khoảng trống còn thừa lớn gấp 3 lần các ô khác */
+}
